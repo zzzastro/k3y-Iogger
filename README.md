@@ -29,6 +29,10 @@ An advanced keylogger built in Python, designed for educational and ethical purp
   - **Section 2**: Combined readable text output showing actual words and sentences
 - **Global Capture**: Captures keystrokes from any application across your system — not limited to the terminal.
 
+<br>
+<br>
+<br>
+
 ## Prerequisites (Fresh PC Setup)
 
 If you're on a fresh Windows machine, follow these steps to get everything ready.
@@ -67,7 +71,15 @@ python --version
 pip --version
 ```
 
+<br>
+<br>
+<br>
+
 ⚠️ Important: After installing Python, you must close and reopen your terminal for the python and pip commands to be recognized.
+
+<br>
+<br>
+<br>
 
 Optional: Install via Chocolatey
 If you prefer Chocolatey as your package manager:
@@ -90,6 +102,10 @@ choco install python -y
 python --version
 pip --version
 ```
+
+<br>
+<br>
+<br>
 
 ## Installation
 
