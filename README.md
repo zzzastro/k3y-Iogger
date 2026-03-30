@@ -52,8 +52,9 @@ Add-AppxPackage -Path "$env:TEMP\winget.msixbundle"
 
 Or install it manually from the Microsoft Store — App Installer.
 
-2. Install Python & pip
-   Python includes pip by default. Install it via winget:
+### 2. Install Python & pip
+
+Python includes pip by default. Install it via winget:
 
 ```bash
 winget install Python.Python.3.12
@@ -71,19 +72,19 @@ pip --version
 Optional: Install via Chocolatey
 If you prefer Chocolatey as your package manager:
 
-Install Chocolatey (run in PowerShell as Administrator):
+### 1. Install Chocolatey (run in PowerShell as Administrator):
 
 ```bash
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-Install Python via Chocolatey:
+### 2. Install Python via Chocolatey:
 
 ```bash
 choco install python -y
 ```
 
-Close and reopen your terminal, then verify:
+### 3. Close and reopen your terminal, then verify:
 
 ```bash
 python --version
@@ -135,7 +136,3 @@ pip --version
 ## Disclaimer
 
 This keylogger is intended for **ethical and educational purposes only**. You must have explicit permission to use this software on any device or system. Unauthorized use can violate laws and privacy regulations. The author is not responsible for any misuse of this software.
-
-```
-
-```
