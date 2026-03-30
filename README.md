@@ -71,38 +71,6 @@ An advanced keylogger built in Python, designed for educational and ethical purp
 
 6. Once the timer ends, the keystrokes are saved to `key_log.txt`.
 
-## Log File Example
-
-============================================================
-KEYLOGGER SESSION LOG
-Date : 2024-01-15 14:23:45
-Duration : 1 minute
-Total Keys: 11
-──────────────────────────────────────────────────────────
-SECTION 1: INDIVIDUAL KEYSTROKE LOG
-──────────────────────────────────────────────────────────
-
-2024-01-15 14:23:45.123 │ h
-2024-01-15 14:23:45.234 │ e
-2024-01-15 14:23:45.345 │ l
-2024-01-15 14:23:45.456 │ l
-2024-01-15 14:23:45.567 │ o
-2024-01-15 14:23:45.678 │ [SPACE]
-2024-01-15 14:23:45.789 │ w
-2024-01-15 14:23:45.890 │ o
-2024-01-15 14:23:45.901 │ r
-2024-01-15 14:23:46.012 │ l
-2024-01-15 14:23:46.123 │ d
-
-──────────────────────────────────────────────────────────
-SECTION 2: COMBINED TEXT OUTPUT
-──────────────────────────────────────────────────────────
-
-hello world
-
-============================================================
-END OF LOG
-
 ## Disclaimer
 
 This keylogger is intended for **ethical and educational purposes only**. You must have explicit permission to use this software on any device or system. Unauthorized use can violate laws and privacy regulations. The author is not responsible for any misuse of this software.
