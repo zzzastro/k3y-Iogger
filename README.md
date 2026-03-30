@@ -31,7 +31,6 @@ An advanced keylogger built in Python, designed for educational and ethical purp
 
 <br>
 <br>
-<br>
 
 ## Prerequisites (Fresh PC Setup)
 
@@ -73,11 +72,9 @@ pip --version
 
 <br>
 <br>
-<br>
 
 ⚠️ Important: After installing Python, you must close and reopen your terminal for the python and pip commands to be recognized.
 
-<br>
 <br>
 <br>
 
@@ -103,7 +100,6 @@ python --version
 pip --version
 ```
 
-<br>
 <br>
 <br>
 
