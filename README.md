@@ -18,6 +18,10 @@ An advanced keylogger built in Python, designed for educational and ethical purp
   - Visual progress bar
   - Completion percentage
   - Live keystroke count
+  - Dynamic window title updates with live stats
+- **Stealth / System Tray Mode**: Option to completely hide the terminal when minimized, moving it to the system tray. Double-click the system tray icon to restore.
+- **Auto-Save & Crash Protection**: Safely auto-saves partial keystroke logs (`key_log_partial.txt`) every 5 seconds to prevent data loss.
+- **Graceful Interruption**: Pressing `Ctrl+C` or closing the terminal safely halts the keylogger and preserves currently captured data in a partial log.
 - **Millisecond-Precision Timestamps**: Each keystroke is logged with timestamps accurate to the millisecond.
 - **Smart Key Handling**:
   - Printable characters logged as-is
@@ -112,10 +116,11 @@ pip --version
    cd k3y-Iogger
    ```
 
-2. Install the required Python library:
+2. Install the required Python libraries:
    ```bash
-   pip install pynput
+   pip install pynput pystray Pillow
    ```
+   _(Note: `pystray` and `Pillow` are recommended for the "Hide to System Tray" feature, but the keylogger will still function basically without them using only `pynput`.)_
 
 ## Usage
 
@@ -127,7 +132,9 @@ pip --version
 
 2. Accept the disclaimer by typing `y` when prompted.
 
-3. Enter the logging duration:
+3. Choose whether to hide the terminal in the system tray when minimized (`y/n`).
+
+4. Enter the logging duration:
 
    ```
    Duration: 1m        # logs for 1 minute
@@ -135,15 +142,17 @@ pip --version
    Duration: 1.5h      # logs for 1 hour 30 minutes
    ```
 
-4. Switch to any application (Notepad, browser, etc.) and start typing.
+5. Switch to any application (Notepad, browser, etc.) and start typing.
 
-5. Watch the live countdown in the terminal:
+6. Watch the live countdown in the terminal:
 
    ```
    ⏱  01:27  │████████████░░░░░░░░░░░░░░░░░░│  52.3%  │  Keys: 47
    ```
 
-6. Once the timer ends, the keystrokes are saved to `key_log.txt`.
+   _(Alternatively, if you chose to hide to the system tray, minimize the terminal to hide it completely)._
+
+7. Once the timer ends (or if you press `Ctrl+C`), the keystrokes are saved to `key_log.txt` (or `key_log_partial.txt`).
 
 ## Disclaimer
 
