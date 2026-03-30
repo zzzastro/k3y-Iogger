@@ -29,6 +29,67 @@ An advanced keylogger built in Python, designed for educational and ethical purp
   - **Section 2**: Combined readable text output showing actual words and sentences
 - **Global Capture**: Captures keystrokes from any application across your system — not limited to the terminal.
 
+## Prerequisites (Fresh PC Setup)
+
+If you're on a fresh Windows machine, follow these steps to get everything ready.
+
+### 1. Install winget (Windows Package Manager)
+
+> Most Windows 10 (1709+) and Windows 11 machines already have winget installed.
+
+Check if you have it:
+
+```powershell
+winget --version
+```
+
+If it's not installed, run this in PowerShell as Administrator:
+
+```powershell
+Invoke-WebRequest -Uri "https://aka.ms/getwinget" -OutFile "$env:TEMP\winget.msixbundle"
+Add-AppxPackage -Path "$env:TEMP\winget.msixbundle"
+```
+
+Or install it manually from the Microsoft Store — App Installer.
+
+2. Install Python & pip
+   Python includes pip by default. Install it via winget:
+
+```bash
+winget install Python.Python.3.12
+```
+
+Close and reopen your terminal, then verify:
+
+```bash
+python --version
+pip --version
+```
+
+⚠️ Important: After installing Python, you must close and reopen your terminal for the python and pip commands to be recognized.
+
+Optional: Install via Chocolatey
+If you prefer Chocolatey as your package manager:
+
+Install Chocolatey (run in PowerShell as Administrator):
+
+```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+Install Python via Chocolatey:
+
+```bash
+choco install python -y
+```
+
+Close and reopen your terminal, then verify:
+
+```bash
+python --version
+pip --version
+```
+
 ## Installation
 
 1. Clone the repository:
@@ -74,3 +135,7 @@ An advanced keylogger built in Python, designed for educational and ethical purp
 ## Disclaimer
 
 This keylogger is intended for **ethical and educational purposes only**. You must have explicit permission to use this software on any device or system. Unauthorized use can violate laws and privacy regulations. The author is not responsible for any misuse of this software.
+
+```
+
+```
